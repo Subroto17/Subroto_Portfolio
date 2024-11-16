@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Projects Section</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      /* Existing Styles */
+      .wrapper {
+        padding: 2rem 0;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .project-box {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: calc(50% - 10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+      }
+
+      /* Hover effect */
+      .project-box:hover {
+        transform: scale(1.02); /* Slightly scales up the box */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+      }
+
+      .project-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .project-content {
+        padding: 1rem;
+        color: black;
+      }
+
+      .project-content h3 {
+        margin-top: 0;
+        color: black;
+        font-size: larger;
+        font-weight: bolder;
+      }
+
+      .project-buttons {
+        margin-top: 1rem;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .button {
+        padding: 0.5rem 1rem;
+        background-color: #007acc;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-family: "Arial", sans-serif;
+        font-weight: 600;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button:hover {
+        background-color: #005a99;
+        transform: translateY(-3px);
+        cursor: pointer;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .project-box {
+          width: 100%; /* Stack project boxes vertically */
+        }
+
+        .project-content h3 {
+          font-size: 1.2rem;
+        }
+
+        .button {
+          padding: 0.4rem 0.8rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .wrapper {
+          padding: 1rem;
+        }
+
+        .project-content {
+          padding: 0.8rem;
+        }
+
+        .project-content h3 {
+          font-size: 1rem;
+        }
+
+        .button {
+          padding: 0.3rem 0.6rem;
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="title">Subroto</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generic.html">My Journey & Skills</a></li>
+          <li><a href="elements.html" class="active">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <section id="projects" class="wrapper">
+      <div class="inner">
+        <header class="major">
+          <h2>My Projects</h2>
+          <hr />
+          <p>
+            A showcase of my recent work in web development and software
+            engineering.
+          </p>
+        </header>
+
+        <div class="projects-container">
+          <!-- Project Box 1 -->
+          <div class="project-box">
+            <img
+              src="images/videsivilla.png"
+              alt="Project 1"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>VidesiVilla</h3>
+              <p>
+                This project is a comprehensive property management platform
+                designed for seamless user experiences and efficient data
+                handling. Key features include secure user authentication with
+                JWT and Bcrypt, enabling sign-up and log-in capabilities. Users
+                can create new listings with detailed information, manage
+                options with easy selection and deselection features, and
+                effortlessly handle photos with drag-and-drop, upload, and
+                delete functions. Bookings are managed through an interactive
+                calendar system, while property feeds are dynamically fetched by
+                category. A robust search function allows keyword-based property
+                searches, and users can manage favorites through an add/remove
+                wishlist feature. Image storage is supported locally and
+                integrated with MongoDB, utilizing Mongoose for schema
+                management. The frontend is powered by Redux for state
+                management, and styled with Sass (scss) and Material UI,
+                ensuring both performance and aesthetic appeal.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/Subroto17/VidesiVilla"
+                  class="button"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Box 2 -->
+          <div class="project-box">
+            <img
+              src="images/Coffeeco.png"
+              alt="Project 2"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>CoffeeCo</h3>
+              <p>
+                CoffeeCo. - A Front-End Coffee Shop Experience, CoffeeCo. is a
+                personal project that showcases my front-end development skills
+                through a dynamic, coffee shop-themed website. This project
+                captures the aesthetic and ambiance of a modern coffee shop,
+                allowing users to explore a curated menu and experience
+                interactive elements seamlessly integrated through JavaScript
+                event handling. Built using HTML, CSS, and JavaScript, CoffeeCo.
+                reflects my dedication to creating visually engaging and
+                user-friendly interfaces. The project also demonstrates my
+                ability to implement interactivity, with JavaScript event
+                listeners enhancing user engagement through dynamic content
+                toggling and responsive features. CoffeeCo. is a testament to my
+                proficiency in front-end development and my commitment to
+                crafting intuitive, enjoyable digital experiences.
+              </p>
+              <div class="project-buttons">
+                <a href="https://github.com/Subroto17/CoffeeCo" class="button"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Box 3 -->
+          <div class="project-box">
+            <img src="images/QR.png" alt="Project 3" class="project-image" />
+            <div class="project-content">
+              <h3>QR CODE GENERATOR</h3>
+              <p>
+                The QR Code Generator is a dynamic web application designed to
+                create custom QR codes instantly by leveraging a third-party
+                API. Built using HTML, CSS, and JavaScript, this project
+                demonstrates my ability to integrate APIs into front-end
+                development, ensuring seamless functionality and an intuitive
+                user experience. The application allows users to input text or
+                URLs and generates QR codes in real-time, offering responsive
+                design and interactive features such as error handling for
+                invalid inputs. This project highlights my skills in creating
+                user-friendly interfaces and working with APIs to deliver
+                practical solutions.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/Subroto17/QR-CODE-GENERATOR"
+                  class="button"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Box 4 -->
+          <div class="project-box">
+            <img src="images/Tic.png" alt="Project 4" class="project-image" />
+            <div class="project-content">
+              <h3>TIC TAC TOE GAME</h3>
+              <p>
+                The Tic Tac Toe Game is a desktop-based application developed in
+                Java, showcasing my expertise in GUI development and logical
+                programming. This interactive two-player game is built using
+                Java Swing and features a clean, responsive interface with
+                dynamic functionality. The application includes robust game
+                logic to determine winners or detect draw situations and
+                provides users with options to restart or exit the game. A
+                real-time clock at the bottom of the interface adds an engaging
+                touch. This project highlights my skills in event handling,
+                threading, and creating intuitive user experiences, reflecting
+                my ability to design practical and enjoyable software solutions.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/Subroto17/TIC-TAC-TOE-GAME"
+                  class="button"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Project Boxes as needed -->
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; All rights reserved.</li>
+          <li>
+            Design By:
+            <a href="https://www.linkedin.com/in/subroto-raj/">Subroto</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
